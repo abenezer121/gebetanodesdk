@@ -34,8 +34,8 @@ const matrix = async (gmarker, apiKey) => {
 
 const tss = async (gmarker, apiKey) => {
   let startpoint = []
-    for (let i = 0; i < points.length; i++){
-      let en = points[i].lat +"/"+ gmarker[i].lng;
+    for (let i = 0; i < gmarker.length; i++){
+      let en = gmarker[i].lat +"/"+ gmarker[i].lng;
       startpoint.push(en)
     }
 
