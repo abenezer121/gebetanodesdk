@@ -58,7 +58,8 @@ const oneToMany = async (start, endpoints, apiKey) => {
   const url = "https://mapapi.gebeta.app/api/v1/route/driving/onm/?la1=" + start.lat + "&lo1=" + start.lon + "&json=" + _endpoints + "&apiKey=" + apiKey
   try {
         const response = await fetch(url);
-        const json = await response.json();
+    const json = await response.json();
+    return json
     return json
   } catch (error) {
     return err;
